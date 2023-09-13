@@ -4,6 +4,7 @@ form{
 }
 
 input{
+    
     position:relative;
     left: 30px;
     top: 20px;
@@ -58,3 +59,4 @@ option:checked {
         padding: 5px;
     }
 }
+

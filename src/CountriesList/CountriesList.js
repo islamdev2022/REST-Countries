@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./CountriesList.css"
-
+import "../index.css"
 const CountriesList = ({countries}) => {
     function formatNumberWithCommas(number) {
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

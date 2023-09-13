@@ -4,7 +4,11 @@
     left: 35px;
     bottom: 5px;
   }
+  .head{
+    transition: background-color 0.9 ease;
+  }
 header{
+    
     height: 60px;
     display: flex;
     background-color:rgb(255, 255, 255);

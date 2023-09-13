@@ -9,14 +9,14 @@
     cursor: pointer;
     position: relative;
     left: 130px;
-    top: 90px;
+    top: 100px;
     z-index: 1;
 }
 .Country-details{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-40%);
     display: flex;
     gap: 60px;
     width: 100%;

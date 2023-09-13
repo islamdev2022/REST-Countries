@@ -2,19 +2,12 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import UseFetch from "../UseFetch";
 import Loader from "../Loader/Loader";
 import "./CountryDetails.css"
-import { useHistory, useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 const CountryDetails = () => {
     
     const {name}=useParams()
     console.log(name)
     const {data:country,isPending,error}=UseFetch('https://restcountries.com/v3.1/name/' +name)
-    const history= useHistory()
-    const Back =()=>{
-        history.push('/')
-    }
-    
-    
-
     return ( 
        <div >
          {isPending && !error &&  <Loader></Loader> }
@@ -42,8 +35,8 @@ const CountryDetails = () => {
       }
         
         return (
-            <>
-            <button className="back" onClick={Back}><span><i class="fa-solid fa-arrow-left-long"></i> </span> Back</button>
+            <div className="detailsPage">
+            <Link to={`/`} ><button className="back" ><span><i class="fa-solid fa-arrow-left-long"></i> </span> Back</button></Link>
             <div className="Country-details" key={name.common}>
             <img className="det-img" src={flags.svg} alt={flags.alt} width ="400" align="left" />
             <div className="details">
@@ -72,9 +65,7 @@ const CountryDetails = () => {
                         <td>
                             {borders && borders.length > 0 ? (
                                 borders.map((border) => (
-                                    <Link className="borders-link" key={border} to={`/country/${cioc}`}>
-                                        <button className="borders">{border}</button>
-                                    </Link>
+                                    <button className="borders">{border}</button>
                                 ))
                                 ) : (
                                     <p>{name.common} has no borders with other countries .</p>
@@ -84,7 +75,7 @@ const CountryDetails = () => {
                 </table>
             </div>
          </div>
-         </>)})
+         </div>)})
     }
        </div>
      );

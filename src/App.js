@@ -17,8 +17,10 @@ function App() {
             <Route exact path="/">
               <FilterSearch></FilterSearch>
               <Home></Home>
+              <CountryDetails></CountryDetails>
             </Route>
             <Route path="/country/:name">
+              <FilterSearch></FilterSearch>
               <CountryDetails></CountryDetails>
             </Route>
             <Route path="/country/:name">

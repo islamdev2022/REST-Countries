@@ -5,9 +5,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: 0.9 ease !important
+  ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --dark-bg-color:hsl(209, 21%, 26%);
+  --div-color:hsl(209, 25%, 18%);
+  --dark-mode-text:hsl(0, 0%, 100%);
+  --dark-mode-input:hsl(0, 0%, 24%);
+  --dark-mode-background:hsl(207, 26%, 17%);
+}
+body.dark-theme{
+  background-color: var(--dark-mode-background);
+  color: var(--light-mode-text);
+}
+.head.dark-theme{
+background-color: var(--dark-bg-color);
+box-shadow: black 0 0 10px 0;
+}
+.head.dark-theme h1,.head.dark-theme button{
+  color: var(--dark-mode-text);
+}
+/* The search and region Form */
+.search-country.dark-theme input {
+background-color: var(--dark-mode-input);
+color: var(--dark-bg-color);
+box-shadow: black 0 0 10px 0;
+}
+.search-country.dark-theme input::placeholder{
+  color: rgb(202, 202, 202);
+}
+.search-country.dark-theme button{
+  background-color: transparent;
+  color: rgb(156, 156, 156);
+}
+.search-country.dark-theme select{
+  background-color: var(--dark-bg-color);
+  color: aliceblue;
+  box-shadow: black 0 0 10px 0;
+}
+.search-country.dark-theme option{
+  background-color:var(--dark-bg-color);
+}
+.search-country.dark-theme p{
+  background-color: var(--dark-mode-text);
+}
+/* The countries list card */
+
+.country-prev.dark-theme{
+  background-color: var(--dark-bg-color);
+  box-shadow: black 0 0 10px 0;
+}
+.country-prev.dark-theme p,.country-prev.dark-theme span,.country-prev.dark-theme h2{
+  color: var(--dark-mode-text);
+}
+
+/* For the detail page */
+
+.Country-details.dark-theme{
+  background-color: var(--dark-mode-background);
+}
+.Country-details.dark-theme .details table tr td {
+color:var(--dark-mode-text) ;
+}
+.Country-details.dark-theme h2{
+  color: var(--dark-mode-text);
+}
+.back.dark-theme {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-mode-text);
 }

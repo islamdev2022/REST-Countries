@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import UseFetch from "../UseFetch";
 import "./FilterSearch.css";
 import { useHistory } from "react-router-dom";
-import CountryDetails from "../CountryDetails/CountryDetails";
 import ByRegion from "../Region/ByRegion";
+import "../index.css"
 const FilterSearch = () => {
   const [countryName, setName] = useState("");
   const [countryRegion, setRegion] = useState("");
-  const [isPending, setIsPending] = useState(false);
   console.log(countryName);
 
   const history = useHistory();
