@@ -76,3 +76,9 @@ color:var(--dark-mode-text) ;
   background-color: var(--dark-bg-color);
   color: var(--dark-mode-text);
 }
+
+/* Region name */
+
+.region-name.dark-theme{
+  color: var(--dark-mode-text);
+}

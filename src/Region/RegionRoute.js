@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import ByRegion from './ByRegion'; // Import your component
 import "./RegionRoute.css"
+import "../index.css"
 function RegionRoute() {
   const { name } = useParams(); // Access the :name parameter from the URL
 

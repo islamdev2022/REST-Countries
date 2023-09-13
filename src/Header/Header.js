@@ -11,9 +11,12 @@ const Header = () => {
     const listItem=document.querySelectorAll('.country-prev')
     const conDetails=document.querySelector('.Country-details')
     const backBtn=document.querySelector('.back')
+    const regionName=document.querySelector('.region-name')
     header.classList.toggle('dark-theme')
     form.classList.toggle('dark-theme')
-    
+    if (regionName){
+      regionName.classList.toggle('dark-theme')
+    }
     if (listItem){
       listItem.forEach((item)=>{
         item.classList.toggle('dark-theme')
@@ -22,12 +25,7 @@ const Header = () => {
     if (conDetails){
       conDetails.classList.toggle('dark-theme') 
       backBtn.classList.toggle('dark-theme')
-    }
-       
-    
-   
-
-    
+    }   
    };
 
   return (
