@@ -1,0 +1,35 @@
+#header{
+    font-size: 25px;
+    position: relative;
+    left: 35px;
+    bottom: 5px;
+  }
+header{
+    height: 60px;
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    box-shadow: rgb(214, 214, 214) 10px 0px 10px 0px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+#mode{
+    position: absolute;
+    right: 35px;
+    top: 20px;
+    border: 0;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width:400px){
+    #header{
+        font-size: 18px;
+        bottom: -5px;
+        left: 20px;
+    }
+    #mode{
+        right: 20px;
+    }
+}

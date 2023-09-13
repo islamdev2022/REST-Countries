@@ -1,0 +1,25 @@
+.Not-found{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.link {
+    color: #007bff;
+    text-align: center;
+    border: 1px solid black;
+    height: 30px;
+
+    
+}

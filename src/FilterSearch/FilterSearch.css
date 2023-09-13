@@ -1,0 +1,60 @@
+form{
+    position: relative;
+    top: 60px;
+}
+
+input{
+    position:relative;
+    left: 30px;
+    top: 20px;
+    width: 35%;
+    height: 40px;
+    border: 0.1px;
+    border-radius: 5px;
+    box-shadow: rgb(196, 195, 195) 0px 0px 20px 0px;
+}
+input::placeholder{
+    padding-left: 20px;
+}
+input:focus{
+    outline: none;
+}
+.search-btn{
+    position: relative;
+    left: 0px;
+    top: 20px;
+    border:transparent;
+    background-color:white;
+    cursor: pointer;
+}
+/* now for the select options */
+
+select{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    width: 150Px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: rgb(196, 195, 195) 0px 0px 20px 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+select:focus{
+    outline: none;
+}
+option{
+    padding: 10px;
+    background-color: #f9f9f9;    
+}
+option:checked {
+    background-color: #bbbbbb;
+  }
+
+@media(max-width:335px){
+    select{
+        width: 120px;
+        padding: 5px;
+    }
+}
