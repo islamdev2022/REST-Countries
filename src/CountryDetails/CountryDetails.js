@@ -62,7 +62,7 @@ const CountryDetails = () => {
                         </tr> 
                         <tr>
                         <td>Border Countries : </td>
-                        <td>
+                        <td className="borders-td">
                             {borders && borders.length > 0 ? (
                                 borders.map((border) => (
                                     <button className="borders">{border}</button>

@@ -20,7 +20,7 @@ function App() {
               <CountryDetails></CountryDetails>
             </Route>
             <Route path="/country/:name">
-              <FilterSearch></FilterSearch>
+              
               <CountryDetails></CountryDetails>
             </Route>
             <Route path="/country/:name">

@@ -30,7 +30,7 @@ box-shadow: black 0 0 10px 0;
 /* The search and region Form */
 .search-country.dark-theme input {
 background-color: var(--dark-mode-input);
-color: var(--dark-bg-color);
+color:white;
 box-shadow: black 0 0 10px 0;
 }
 .search-country.dark-theme input::placeholder{
