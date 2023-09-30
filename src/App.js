@@ -20,7 +20,6 @@ function App() {
               <CountryDetails></CountryDetails>
             </Route>
             <Route path="/country/:name">
-              
               <CountryDetails></CountryDetails>
             </Route>
             <Route path="/country/:name">

@@ -40,6 +40,9 @@ font-weight: 330;
     height: 25px;
     cursor: pointer;
 }
+.borders-td{
+    width: 250Px;
+}
 table{
     border-collapse: separate;
     border-spacing: 10px;
@@ -48,6 +51,8 @@ table{
 }
 .det-img{
     border-radius: 0 !important;
+    width: 400px;
+    height: 250px;
 }
 @media (max-width:1219px){
 .Country-details{

@@ -2,12 +2,14 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import UseFetch from "../UseFetch";
 import Loader from "../Loader/Loader";
 import "./CountryDetails.css"
+import "../index.css"
+
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-const CountryDetails = () => {
+const CountryDetails = ({darkMode}) => {
     
     const {name}=useParams()
     console.log(name)
-    const {data:country,isPending,error}=UseFetch('https://restcountries.com/v3.1/name/' +name)
+    const {data:country,isPending,error}=UseFetch(`https://restcountries.com/v3.1/name/${name}/`)
     return ( 
        <div >
          {isPending && !error &&  <Loader></Loader> }

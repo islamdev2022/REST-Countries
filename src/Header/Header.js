@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.css";
 import "../index.css"
-
 const Header = () => {
   
  const handleClick = () => {
@@ -22,7 +21,8 @@ const Header = () => {
         item.classList.toggle('dark-theme')
       })
     }
-    if (conDetails){
+  
+    if (conDetails&&listItem){
       conDetails.classList.toggle('dark-theme') 
       backBtn.classList.toggle('dark-theme')
     }   

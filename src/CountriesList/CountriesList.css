@@ -7,7 +7,7 @@
 .country-prev{
     display: flex;
     flex-basis:content;
-    margin: 30px;
+    margin: 29px;
     justify-content: center;
     background-color: #fff;
     border-radius:  10px;
