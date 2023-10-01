@@ -4,8 +4,10 @@ import "./FilterSearch.css";
 import { useHistory } from "react-router-dom";
 import ByRegion from "../Region/ByRegion";
 import "../index.css"
+
 const FilterSearch = () => {
   const [countryName, setName] = useState("");
+  
   const [countryRegion, setRegion] = useState("");
   console.log(countryName);
 
@@ -18,7 +20,7 @@ const FilterSearch = () => {
         <ByRegion region={selectedRegion}></ByRegion>
       </>
     );
-  };
+  f};
 
   return (
     <>
@@ -30,6 +32,7 @@ const FilterSearch = () => {
           value={countryName}
           onChange={(e) => setName(e.target.value)}
         />
+       
         <Link to={`/country/${countryName}`}>
           <button className="search-btn" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>

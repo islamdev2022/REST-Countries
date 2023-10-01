@@ -5,7 +5,7 @@ import "./CountryDetails.css"
 import "../index.css"
 
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-const CountryDetails = ({darkMode}) => {
+const CountryDetails = () => {
     
     const {name}=useParams()
     console.log(name)
