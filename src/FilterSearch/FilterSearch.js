@@ -20,7 +20,7 @@ const FilterSearch = () => {
         <ByRegion region={selectedRegion}></ByRegion>
       </>
     );
-  f};
+  };
 
   return (
     <>
